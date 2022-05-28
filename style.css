@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: rgb(49, 74, 13);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header a {
+    color: #fff;
+}
+#logo {
+    margin:  0 auto;
+    font-size: 32px;
+}
+#menu li {
+    padding: 10px;
+}
+#social-links li {
+    padding: 10px;
+}
+/*========== Header section end ==========*/
+main {
+    display: flex;
+}
+aside {
+    background-color: beige;
+    padding: 10px;
+    flex:0 0 20vw;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside ul a {
+    display: block;
+    color: rgb(49, 74, 13);
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+aside img {
+    width: 100%;
+}
+article {
+    padding: 10px;
+}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+}
+.services-box {
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    flex: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+.services-box h3 {
+    margin: 10px 0 0 0;
+}
+.services-box p {
+    margin: 5px 0 10px 0;
+}
+.services-box img {
+    width: 100%;
+}
+.call-to-action {
+    margin-top: auto;
+    align-self: flex-start;
+}
+.call-to-action a {
+    display: block;
+    background-color: grey;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 8px 13px;
+}
+.call-to-action a:hover {
+    background-color: transparent;
+    color: grey;
+    border: 2px solid grey;
+}
+
+
+/*============= Footer section start ==============*/
+footer {
+    background-color: rgb(49, 74, 13);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width:700px) {
+    h2 {
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    #logo {
+        order: -1;
+    }
+    main {
+        flex-direction: column;
+    }
+    article {
+        order: -1;
+    }
+    .services-container {
+        flex-direction: column;
+    }
+    .services-box {
+        flex: 100%;
+        max-width: 100%;
+        margin: 10px 0px;
+    }
+}
